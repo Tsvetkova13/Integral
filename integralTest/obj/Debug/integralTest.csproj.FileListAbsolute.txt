@@ -1,0 +1,10 @@
+D:\уч.материалы\6 семестр\архитех\integralTest\integralTest\bin\Debug\integralTest.exe.config
+D:\уч.материалы\6 семестр\архитех\integralTest\integralTest\bin\Debug\integralTest.exe
+D:\уч.материалы\6 семестр\архитех\integralTest\integralTest\bin\Debug\integralTest.pdb
+D:\уч.материалы\6 семестр\архитех\integralTest\integralTest\obj\Debug\integralTest.csprojAssemblyReference.cache
+D:\уч.материалы\6 семестр\архитех\integralTest\integralTest\obj\Debug\integralTest.Form1.resources
+D:\уч.материалы\6 семестр\архитех\integralTest\integralTest\obj\Debug\integralTest.Properties.Resources.resources
+D:\уч.материалы\6 семестр\архитех\integralTest\integralTest\obj\Debug\integralTest.csproj.GenerateResource.cache
+D:\уч.материалы\6 семестр\архитех\integralTest\integralTest\obj\Debug\integralTest.csproj.CoreCompileInputs.cache
+D:\уч.материалы\6 семестр\архитех\integralTest\integralTest\obj\Debug\integralTest.exe
+D:\уч.материалы\6 семестр\архитех\integralTest\integralTest\obj\Debug\integralTest.pdb
