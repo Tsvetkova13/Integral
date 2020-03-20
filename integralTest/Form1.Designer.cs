@@ -32,9 +32,11 @@
             this.textBoxA = new System.Windows.Forms.TextBox();
             this.labelA = new System.Windows.Forms.Label();
             this.labelB = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxB = new System.Windows.Forms.TextBox();
             this.labelh = new System.Windows.Forms.Label();
             this.textBoxH = new System.Windows.Forms.TextBox();
+            this.textFunc = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -42,18 +44,19 @@
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(539, 123);
+            this.button1.Location = new System.Drawing.Point(465, 133);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(127, 63);
             this.button1.TabIndex = 0;
             this.button1.Text = "Count";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBoxA
             // 
             this.textBoxA.BackColor = System.Drawing.Color.Black;
             this.textBoxA.ForeColor = System.Drawing.Color.Red;
-            this.textBoxA.Location = new System.Drawing.Point(225, 46);
+            this.textBoxA.Location = new System.Drawing.Point(225, 133);
             this.textBoxA.Name = "textBoxA";
             this.textBoxA.Size = new System.Drawing.Size(100, 20);
             this.textBoxA.TabIndex = 1;
@@ -64,7 +67,7 @@
             this.labelA.BackColor = System.Drawing.Color.Black;
             this.labelA.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelA.ForeColor = System.Drawing.Color.Red;
-            this.labelA.Location = new System.Drawing.Point(77, 37);
+            this.labelA.Location = new System.Drawing.Point(61, 133);
             this.labelA.Name = "labelA";
             this.labelA.Size = new System.Drawing.Size(117, 39);
             this.labelA.TabIndex = 2;
@@ -76,20 +79,20 @@
             this.labelB.BackColor = System.Drawing.Color.Black;
             this.labelB.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelB.ForeColor = System.Drawing.Color.Red;
-            this.labelB.Location = new System.Drawing.Point(77, 103);
+            this.labelB.Location = new System.Drawing.Point(77, 193);
             this.labelB.Name = "labelB";
             this.labelB.Size = new System.Drawing.Size(101, 39);
             this.labelB.TabIndex = 3;
             this.labelB.Text = "UP B";
             // 
-            // textBox1
+            // textBoxB
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Black;
-            this.textBox1.ForeColor = System.Drawing.Color.Red;
-            this.textBox1.Location = new System.Drawing.Point(225, 103);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.textBoxB.BackColor = System.Drawing.Color.Black;
+            this.textBoxB.ForeColor = System.Drawing.Color.Red;
+            this.textBoxB.Location = new System.Drawing.Point(225, 193);
+            this.textBoxB.Name = "textBoxB";
+            this.textBoxB.Size = new System.Drawing.Size(100, 20);
+            this.textBoxB.TabIndex = 4;
             // 
             // labelh
             // 
@@ -97,7 +100,7 @@
             this.labelh.BackColor = System.Drawing.Color.Black;
             this.labelh.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelh.ForeColor = System.Drawing.Color.Red;
-            this.labelh.Location = new System.Drawing.Point(77, 180);
+            this.labelh.Location = new System.Drawing.Point(141, 247);
             this.labelh.Name = "labelh";
             this.labelh.Size = new System.Drawing.Size(37, 39);
             this.labelh.TabIndex = 5;
@@ -107,10 +110,31 @@
             // 
             this.textBoxH.BackColor = System.Drawing.Color.Black;
             this.textBoxH.ForeColor = System.Drawing.Color.Red;
-            this.textBoxH.Location = new System.Drawing.Point(225, 180);
+            this.textBoxH.Location = new System.Drawing.Point(225, 247);
             this.textBoxH.Name = "textBoxH";
             this.textBoxH.Size = new System.Drawing.Size(100, 20);
             this.textBoxH.TabIndex = 6;
+            // 
+            // textFunc
+            // 
+            this.textFunc.BackColor = System.Drawing.Color.Black;
+            this.textFunc.ForeColor = System.Drawing.Color.Red;
+            this.textFunc.Location = new System.Drawing.Point(225, 73);
+            this.textFunc.Name = "textFunc";
+            this.textFunc.Size = new System.Drawing.Size(100, 20);
+            this.textFunc.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(48, 73);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(130, 37);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Fuction";
             // 
             // Form1
             // 
@@ -119,9 +143,11 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.BackgroundImage = global::integralTest.Properties.Resources.IMG_2109;
             this.ClientSize = new System.Drawing.Size(798, 368);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textFunc);
             this.Controls.Add(this.textBoxH);
             this.Controls.Add(this.labelh);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxB);
             this.Controls.Add(this.labelB);
             this.Controls.Add(this.labelA);
             this.Controls.Add(this.textBoxA);
@@ -139,9 +165,11 @@
         private System.Windows.Forms.TextBox textBoxA;
         private System.Windows.Forms.Label labelA;
         private System.Windows.Forms.Label labelB;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxB;
         private System.Windows.Forms.Label labelh;
         private System.Windows.Forms.TextBox textBoxH;
+        private System.Windows.Forms.TextBox textFunc;
+        private System.Windows.Forms.Label label1;
     }
 }
 
